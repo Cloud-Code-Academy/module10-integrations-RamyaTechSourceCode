@@ -1,6 +1,6 @@
 public class ContactTriggerHandler {
 
-    public static void TriggerBeforeInsert(List<Contact> contacts) {
+    public static void triggerBeforeInsert(List<Contact> contacts) {
         for(Contact con : contacts)
         {
             // When a contact is inserted
@@ -17,7 +17,7 @@ public class ContactTriggerHandler {
             }
         }
      }
-     public static void TriggerAfterUpdate(List<Contact> contacts) {
+     public static void triggerAfterUpdate(List<Contact> contacts) {
         for(Contact con : contacts)
         {
             //When a contact is updated

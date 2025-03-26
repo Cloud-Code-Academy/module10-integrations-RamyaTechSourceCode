@@ -20,10 +20,10 @@ trigger ContactTrigger on Contact(before insert, before update) {
      
 	if(trigger.isBefore && trigger.isInsert)
 	{
-		ContactTriggerHandler.TriggerBeforeInsert(trigger.new);
+		ContactTriggerHandler.triggerBeforeInsert(trigger.new);
 	}
 	else if(trigger.isBefore && trigger.isUpdate)
 	{
-		ContactTriggerHandler.TriggerAfterUpdate(trigger.new);
+		ContactTriggerHandler.triggerAfterUpdate(trigger.new);
 	}
 }
